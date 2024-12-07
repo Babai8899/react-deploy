@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <SidebarItems/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/react-deploy" element={<Home />} />
           {/* <Route path="/task" element={<Task />} />
           <Route path="/list" element={<List />} />
           <Route path="/note" element={<Note />} />
