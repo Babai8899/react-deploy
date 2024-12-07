@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-rou
 import SidebarItems from "./shared/SidebarItems"
 import { CircleCheckBig, ListTodo, CalendarCheck2, NotebookPen } from 'lucide-react'
 import Home from "./module/Home"
+import "./App.css"
 // import Task from "./users/Task"
 // import List from "./users/List"
 // import Note from "./users/Note"
