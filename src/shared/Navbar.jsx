@@ -28,10 +28,7 @@ function Navbar() {
                     <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/'}><CheckCheck size={40} className='mr-4' />InfyTrip</Link>
                 </div>
                 <div className='navbar-end'>
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs mr-2" />
-                    <button className='mr-1 ml-2 px-1 py-1 w-12 h-12 rounded-full cursor-pointer hover:bg-base-300 hover:duration-500'>
-                        <Search size={40} className='' />
-                    </button>
+                    
 
                     <label className="swap swap-rotate mr-1 ml-2 px-1 py-1 w-12 h-12 rounded-full cursor-pointer hover:bg-base-300 hover:duration-500">
                         {/* this hidden checkbox controls the state */}
