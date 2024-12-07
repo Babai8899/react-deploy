@@ -25,7 +25,7 @@ function Navbar() {
             <div className="navbar bg-base-200 mx-auto max-h-20 min-h-20">
                 <div className="navbar-start">
 
-                    <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/'}><CheckCheck size={40} className='mr-4' />InfyTrip</Link>
+                    <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={40} className='mr-4' />InfyTrip</Link>
                 </div>
                 <div className='navbar-end'>
                     
