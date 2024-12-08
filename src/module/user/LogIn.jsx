@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SimpleAlert from '../../shared/SimpleAltert.jsx';
 
 import axios, { HttpStatusCode } from 'axios'
@@ -87,7 +87,7 @@ function LogIn() {
                 </label>
                 <div className='mx-auto'>
                     <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-5 mx-3' onClick={(e) => onSubmit(e)}>Log in</button>
-                    <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-5 mx-3'><a href='/react-deploy/register'>Register</a></button>
+                    <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-5 mx-3'><Link to={'/react-deploy/register'}>Register</Link></button>
                 </div>
             </div>
             <SimpleAlert alert={alert} className="text-xl" />
