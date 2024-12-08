@@ -20,21 +20,30 @@ function Navbar() {
         document.querySelector("html").setAttribute("data-theme", localTheme);
     });
 
+    const isLoggedIn = window.localStorage.getItem('isLoggedIn');
+
+    const logout = () => {
+        localStorage.removeItem('isLoggedIn');
+        window.location.reload();
+        window.location.href = '/react-deploy';
+    }
+
     return (
         <div>
             <div className="navbar bg-base-200 mx-auto max-h-20 min-h-20">
-                <div className="navbar-start">
-
+                {isLoggedIn ?<div className="navbar-start">
                     <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={40} className='mr-4' />InfyTrip</Link>
                 </div>
+                :
+                <div className="navbar-start">
+                    <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={40} className='mr-4' />InfyTrip</Link>
+                </div>}
                 <div className='navbar-end'>
-                    
-
                     <label className="swap swap-rotate mr-1 ml-2 px-1 py-1 w-12 h-12 rounded-full cursor-pointer hover:bg-base-300 hover:duration-500">
                         {/* this hidden checkbox controls the state */}
-                        
+
                         <input type="checkbox" className="theme-controller " value="synthwave" onChange={toggleTheme} />
-                
+
                         {/* sun icon */}
                         <Sun size={40} className='swap-on ' />
 
@@ -62,7 +71,7 @@ function Navbar() {
                                     Profile
                                 </a>
                             </li>
-                            <li><a className='text-xl'>Logout</a></li>
+                            <li><a className='text-xl' onClick={logout}>Logout</a></li>
                         </ul>
                     </div>
                 </div>
