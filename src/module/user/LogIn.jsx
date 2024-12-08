@@ -60,7 +60,7 @@ function LogIn() {
     }
     return (
         <div>
-            <div className="card ml-24 lg:mx-auto w-72 lg:w-96 h-11/12 border-base-300 border-4 py-8 mt-40 mb-10 lg:my-7">
+            <div className="card mx-auto w-80 h-11/12 border-base-300 border-4 py-8 mt-10 mb-5 lg:my-7">
                 <label className="input input-bordered flex items-center gap-2 w-64 mx-auto my-5">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ function LogIn() {
                 </label>
                 <div className='mx-auto'>
                     <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-5 mx-3' onClick={(e) => onSubmit(e)}>Log in</button>
-                    <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-5 mx-3'><a href='/register'>Register</a></button>
+                    <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-5 mx-3'><a href='/react-deploy/register'>Register</a></button>
                 </div>
             </div>
             <SimpleAlert alert={alert} className="text-xl" />

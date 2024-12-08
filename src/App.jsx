@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-rou
 import SidebarItems from "./shared/SidebarItems"
 import Home from "./module/Home"
 import LogIn from "./module/user/LogIn.jsx"
-// import AddCustomer from "./module/customer/AddCustomer"
+import Add from "./module/user/Add.jsx"
 // import Read from "./module/customer/Read"
 // import ChatBot from "./shared/ChatBot"
 // import Task from "./users/Task"
@@ -21,7 +21,9 @@ function App() {
       {/* <ChatBot/> */}
       <Router>
         <Navbar />
+        {isLoggedIn === 'true' ? 
         <SidebarItems/>
+        : null }
         <Routes>
           {/* <Route path="/task" element={<Task />} />
           <Route path="/list" element={<List />} />
@@ -30,7 +32,7 @@ function App() {
           {isLoggedIn === 'true' ? <Route exact path='/react-deploy' element={<Home />} /> : <Route exact path='/react-deploy' element={<LogIn />} />}
           <Route exact path='/react-deploy' element={<Home />} />
           <Route exact path='/react-deploy/login' element={<LogIn />} />
-          {/* <Route exact path='/register' element={<AddCustomer />} /> */}
+          <Route exact path='/react-deploy/register' element={<Add />} />
           {/* <Route exact path='/customer/view' element={<Read />} /> */}
         </Routes>
       </Router>
