@@ -163,7 +163,7 @@ function Add() {
                             <input type="text" className="grow" placeholder="Address Line 1" name='addressLine1' value={addressLine1} onChange={(e) => onInputChange(e)} />
                         </label>
                         <label className="input input-bordered flex items-center w-64 lg:my-0 mb-0.5 mt-0.5 lg:w-96 mx-auto lg:mr-10 lg:float-right text-sm">
-                            <input type="text" className="grow" placeholder="Address Line 2" name='addressLine2' value={addressLine2} onChange={(e) => onInputChange(e)} />
+                            <input type="text" className="grow" placeholder="Address Line 2 (optional)" name='addressLine2' value={addressLine2} onChange={(e) => onInputChange(e)} />
                         </label>
                     </div>
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
