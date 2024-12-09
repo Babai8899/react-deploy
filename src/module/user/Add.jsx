@@ -130,7 +130,7 @@ function Add() {
     return (
         <div>
             <div>
-                <div className="card mx-auto w-10/12 h-96 lg:h-11/12 border-base-300 border-4 py-2 my-2 overflow-y-scroll">
+                <div className="card mx-auto w-10/12 h-96 lg:h-5/6 border-base-300 border-4 py-1 my-1 overflow-y-scroll">
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
                         <label className="input input-bordered flex items-center w-64 mx-auto lg:ml-10 lg:float-left text-sm">
                             <input type="text" className="grow" placeholder="User Id" name='userId' value={userId} onChange={(e) => onInputChange(e)} />
@@ -186,8 +186,8 @@ function Add() {
                         </label>
                     </div>
                     <div className='mx-auto'>
-                        <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-3 mx-3' onClick={(e) => resetInputs(e)}>Reset</button>
-                        <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-3 mx-3' onClick={(e) => onSubmit(e)}>Register</button>
+                        <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-2 mx-3' onClick={(e) => resetInputs(e)}>Reset</button>
+                        <button className='bg-base-300 h-10 rounded-xl w-20 py-1 px-2 hover:bg-base-200 hover:w-24 hover:transition-all my-2 mx-3' onClick={(e) => onSubmit(e)}>Register</button>
                     </div>
 
                 </div>
