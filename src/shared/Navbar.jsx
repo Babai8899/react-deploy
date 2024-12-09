@@ -32,11 +32,11 @@ function Navbar() {
         <div>
             <div className="navbar bg-base-200 mx-auto max-h-20 min-h-20">
                 {isLoggedIn ? <div className="navbar-start">
-                    <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={40} className='mr-4' />Voyage</Link>
+                    <Link className="relative flex text-xl lg:text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={30} lg:size={40} className='mr-4' />Voyage</Link>
                 </div>
                     :
                     <div className="navbar-start">
-                        <Link className="relative flex text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={40} className='mr-4' />Voyage</Link>
+                        <Link className="relative flex text-xl lg:text-4xl px-2 py-2 rounded-md cursor-pointer mx-1 hover:bg-base-300 hover:duration-500" to={'/react-deploy'}><CheckCheck size={30} lg:size={40} className='mr-4' />Voyage</Link>
                     </div>}
 
                 <div className='navbar-end'>
@@ -78,7 +78,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </> :
-                        <Link to={'/react-deploy/login'} className='text-2xl hover:bg-base-300 hover:duration-500 px-16 py-2 rounded-xl cursor pointer'>Log In</Link>
+                        <Link to={'/react-deploy/login'} className=' lg:text-2xl hover:bg-base-300 hover:duration-500 px-5 lg:px-16 py-2 rounded-xl cursor pointer'>Log In</Link>
                     }
                 </div>
             </div>

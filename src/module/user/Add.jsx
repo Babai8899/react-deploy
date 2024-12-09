@@ -132,26 +132,26 @@ function Add() {
             <div>
                 <div className="card mx-auto w-10/12 h-96 lg:h-5/6 border-base-300 border-4 py-1 my-1 overflow-y-scroll">
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
-                        <label className="input input-bordered flex items-center w-64 mx-auto lg:ml-10 lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-1 w-64 mx-auto lg:ml-10 lg:float-left text-sm">
                             <input type="text" className="grow" placeholder="User Id" name='userId' value={userId} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center w-64 mx-auto lg:mx-2.5 lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-1 w-64 mx-auto lg:mx-2.5 lg:float-left text-sm">
                             <input type="email" placeholder='Name' className="grow" name='userName' value={userName} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center w-64 mx-auto lg:float lg:mr-10 lg:float-right text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-0.5 w-64 mx-auto lg:float lg:mr-10 lg:float-right text-sm">
                             <input type="contact" placeholder='Contact No' className="grow" name='phone' value={phone} onChange={(e) => onInputChange(e)} />
                         </label>
                     </div>
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
-                        <label className="input input-bordered flex items-center w-64 mx-auto lg:ml-10 lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-0.5 w-64 mx-auto lg:ml-10 lg:float-left text-sm">
                             <input type="contact" placeholder='Email' className="grow" name='email' value={email} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center w-64 mx-auto lg:mx-2.5 lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-1 w-64 mx-auto lg:mx-2.5 lg:float-left text-sm">
                             DOB:&nbsp;
                             <input type="date" className="grow" name='dob' value={dob} onChange={(e) => onInputChange(e)} />
                         </label>
                         <label>
-                            <select className="select input input-bordered flex items-center mx-auto w-64 lg:mr-10 lg:float-right text-sm" name='gender' value={gender} onChange={(e) => onInputChange(e)}>
+                            <select className="select input input-bordered flex lg:my-0 my-0.5 items-center mx-auto w-64 lg:mr-10 lg:float-right text-sm" name='gender' value={gender} onChange={(e) => onInputChange(e)}>
                                 <option disabled selected>Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -159,29 +159,29 @@ function Add() {
                         </label>
                     </div>
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
-                        <label className="input input-bordered flex items-center w-64 lg:w-96 mx-auto lg:ml-10 lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 mt-0.5 mb-1 w-64 lg:w-96 mx-auto lg:ml-10 lg:float-left text-sm">
                             <input type="text" className="grow" placeholder="Address Line 1" name='addressLine1' value={addressLine1} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center w-64 lg:w-96 mx-auto lg:mr-10 lg:float-right text-sm">
+                        <label className="input input-bordered flex items-center w-64 lg:my-0 mb-0.5 mt-0.5 lg:w-96 mx-auto lg:mr-10 lg:float-right text-sm">
                             <input type="text" className="grow" placeholder="Address Line 2" name='addressLine2' value={addressLine2} onChange={(e) => onInputChange(e)} />
                         </label>
                     </div>
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
-                        <label className="input input-bordered flex items-center w-64 lg:ml-10 mx-auto lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-0.5 w-64 lg:ml-10 mx-auto lg:float-left text-sm">
                             <input type="text" placeholder='City' className="grow" name='city' value={city} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center w-64 lg:mx-2.5 mx-auto lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-1 w-64 lg:mx-2.5 mx-auto lg:float-left text-sm">
                             <input type="text" placeholder='State' className="grow" name='state' value={state} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center w-64 lg:mr-10 mx-auto lg:float-right text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-0.5 w-64 lg:mr-10 mx-auto lg:float-right text-sm">
                             <input type="text" className="grow" placeholder="Pincode" name='pincode' value={pincode} onChange={(e) => onInputChange(e)} />
                         </label>
                     </div>
                     <div className='flow-root mx-auto lg:my-1 w-5/6'>
-                        <label className="input input-bordered flex items-center lg:ml-10 w-64 mx-auto lg:w-96 lg:float-left text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-0.5 lg:ml-10 w-64 mx-auto lg:w-96 lg:float-left text-sm">
                             <input type="password" placeholder='Password' className="grow" name='password' value={password} onChange={(e) => onInputChange(e)} />
                         </label>
-                        <label className="input input-bordered flex items-center lg:mr-10 lg:w-96 mx-auto w-64 lg:float-right text-sm">
+                        <label className="input input-bordered flex items-center lg:my-0 my-1 lg:mr-10 lg:w-96 mx-auto w-64 lg:float-right text-sm">
                             <input type="password" placeholder='Confirm Password' className="grow" name='confirmPassword' value={confirmPassword} onChange={(e) => onInputChange(e)} />
                         </label>
                     </div>
